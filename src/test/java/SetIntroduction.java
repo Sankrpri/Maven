@@ -4,6 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
+import java.sql.SQLOutput;
 import java.util.List;
 
 public class SetIntroduction {
@@ -12,7 +13,20 @@ public class SetIntroduction {
         System.setProperty("web driver.chrome.driver","/Users/DELL/Documents/chromedriver.exe");
        // ChromeOptions options=new ChromeOptions();
        // options.addArguments("-remote-allow-origins=*");
+
+        String ta="ABCC";
+        String abc=ta.replace("C" , "D");
+        System.out.println(ta);
+        System.out.println(abc);
         WebDriver driver=new ChromeDriver();
+        driver.get("https://www.flipkart.com/");
+        driver.manage().window().maximize();
+
+       driver.findElement(By.xpath("//*[@id='container']/div/div[1]/div/div/div/div/div[1]/div/div[1]/div/div[2]/div[1]/div/div[2]/div/div/div/div/div/div/div/button[2]/span")).click();
+       // Thread.sleep(5000);
+       // driver.findElement(By.xpath("//div[text()='My Profile']")).click();
+        //System.out.println(x);
+        /* WebDriver driver=new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
         Thread.sleep(5000);
@@ -68,7 +82,7 @@ public class SetIntroduction {
         System.out.println("Mausam");
         //System.out.println(driver.getCurrentUrl());
         driver.close();
-        driver.quit();
+        driver.quit();*/
 
 
 
