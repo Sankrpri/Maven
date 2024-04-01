@@ -14,6 +14,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
             Inheritance obj= new Honda();
             System.out.println(obj.speedLimit);
+            Honda obj1= new Honda();
+            System.out.println(obj1.speedLimit);
 
 
         }
