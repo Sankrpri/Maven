@@ -6,6 +6,9 @@ public class SteamApi {
 
     public static void main(String[] args) throws InterruptedException {
 
+        int [] array={1,2,3,4,5};
+        int sum= Arrays.stream(array).filter(n-> n%2==0).sum();
+        System.out.println(sum);
 
         List<String> names=List.of("Aman","Anshu","Annu","Deespk","Akash");
         List<String> NameStartWithA =names.stream().filter(e->e.startsWith("A")).toList();
